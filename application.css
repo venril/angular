@@ -1,0 +1,6 @@
+.ng-valid.ng-dirty {
+    bg-color: green;
+}
+.ng-invalid.ng-dirty {
+    bg-color: red;
+}
