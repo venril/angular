@@ -22,15 +22,23 @@
         this.addReview = function (product) {
             product.reviews.push(this.review);
             this.review.createdOn = Date.now();
-            
+
         };
 
     });
+
 
     app.controller('GalleryController', function () {
         this.current = 0;
         this.setCurrent = function (newGallery) {
             this.current = newGallery || 0;
+        };
+    });
+
+    app.directive("productDescription", function () {
+        return{
+            restrict: 'E',
+            templateUrl: 'product-description.html'
         };
     });
 
